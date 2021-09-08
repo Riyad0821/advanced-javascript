@@ -17,5 +17,10 @@ console.log(Math.min(2, 4) + 100); //102
 //For Loops
 //Break and Continue
 //Comments
+//Updating Bindings Succinctly
+counter = counter + 1
+//Dispatching on a Value with Switch
+// if-else
+// switch-case
 
 

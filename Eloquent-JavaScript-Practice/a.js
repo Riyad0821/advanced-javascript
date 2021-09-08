@@ -27,7 +27,7 @@ const c = [1,2,3];
 // let d = c.map(s => s); //Deep copy
 // let d = c; //Shallow copy
 // let d = Object.assign({}, c); //Deep copy
-// let d = {...c}; //Deep copy
+let d = {...c}; //Deep copy
 
 d[1] = 5;
 
@@ -35,14 +35,14 @@ console.log(c[1]);
 console.log(d[1]);
 
 //Instance of custom classes's deep copy and shallow copy
-class Counter{
-    constructor(){
-        this.count = 5;
-    }
-}
+// class Counter{
+//     constructor(){
+//         this.count = 5;
+//     }
+// }
 
-copy(){
-    const copy = new Counter();
-    copy.count = this.count;
-    return copy;
-}
+// copy(){
+//     const copy = new Counter();
+//     copy.count = this.count;
+//     return copy;
+// }

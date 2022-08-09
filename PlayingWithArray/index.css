@@ -1,0 +1,22 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(250, 239, 226);
+}
+
+#array-container {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+}
+.child{
+    margin-left: 15px;
+    color: turquoise;
+    border: 3px solid sandybrown;
+}
+#generate-array-btn{
+    margin: 10px 10px;
+}
+

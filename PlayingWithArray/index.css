@@ -4,19 +4,34 @@ html, body{
     background-color: rgb(250, 239, 226);
 }
 
+#main-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+button, input {
+    width: 100px;
+}
+
+
 #array-container {
     /* border: 1px solid black; */
     display: flex;
     align-items: baseline;
     justify-content: center;
+    margin: auto
 
 }
 .child{
-    margin-left: 15px;
+    margin-left: 5px;
     color: turquoise;
     border: 3px solid sandybrown;
 }
 #generate-array-btn{
     margin: 10px 10px;
 }
-
+#title{
+    display:flex;
+    justify-content: center;
+}

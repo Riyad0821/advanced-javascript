@@ -4,18 +4,13 @@ function createStructure(){
 const arraySizeInputBox =  document.createElement('input');
 arraySizeInputBox.type = 'number';
 arraySizeInputBox.id = 'array-size-input';
+arraySizeInputBox.label = "Array size"
 mainContainer.appendChild(arraySizeInputBox);
 
 const generateArrayBtn = document.createElement('button');
 generateArrayBtn.id = 'generate-array-btn';
 generateArrayBtn.innerHTML = 'Generate Array';
 mainContainer.appendChild(generateArrayBtn);
-
-const arrayContainer = document.createElement('div');
-arrayContainer.id = 'array-container';
-mainContainer.appendChild(arrayContainer);
-
-
 }
 createStructure();
 
@@ -29,12 +24,16 @@ function makeEmptyParent(parent){
 
 
 function generateArray(y){
+    const arrayContainer = document.createElement('div');
+    arrayContainer.id = 'array-container';
+    mainContainer.appendChild(arrayContainer);
     const parent = document.getElementById('array-container');
     makeEmptyParent(parent);
+    
     for(let i = 0; i < y.length; i++){
         let node = document.createElement('div');
         node.style.height = `${y[i]}px`;
-        node.style.margin = '3px';
+        node.style.margin = '2px';
         node.className = 'child'
         console.log({node})
         parent.appendChild(node); 
